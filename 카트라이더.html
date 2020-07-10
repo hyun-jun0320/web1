@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="크레이지레이싱 카트라이더"/>
+	<meta name="author" content="NEXON Korea"/>
+	<meta name="keywords" content="NEXON, 넥슨, NEXON Korea, 넥슨코리아, 카트, 카트라이더"/>
+
+	<title> ::: Enjoy Drift! - 크레이지레이싱 카트라이더 :::</title>
+
+
+
+	<script type="text/javascript" src="http://js.nx.com/s1/kart_v2/common/html5.js"></script>
+	<script type="text/javascript" src="http://js.nx.com/s1/kart_v2/common/modernizr.js" ></script>
+
+	<!--[if lte IE 7]>
+	<script src="http://js.nx.com/s1/kart_v2/common/IE7.js"></script>
+	<![endif]-->
+
+    <script type="text/javascript" src="http://js.nx.com/s1/common/GNXBanner.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://js.nx.com/s1/Game/jquery/jquery-1.7.2.min.js" charset="utf-8"></script>
+     <script type="text/javascript" src="http://js.nx.com/s1/Game/jquery/jquery.easing.1.3.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/ngw.ui.min.js" charset="utf-8"></script>
+
+    <script src="http://js.nx.com/s1/global/ngb_gamestart.js"></script>
+	<script type="text/javascript" src="http://js.nx.com/s1/Kart_v2/Common/marquee.js"  charset="utf-8"></script>
+	<script type="text/javascript" src="http://js.nx.com/s1/Kart_v2/Common/ui.js"  charset="utf-8"></script>
+    <script type="text/javascript" src="http://js.nx.com/s1/kart_v2/Common/GnxFlashActivate.js" ></script>
+    <script type="text/javascript" src="/js/GamewebUtil.js?t=2020052714" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/ItemRenderer.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/EmblemUtil.js?t=2018071001" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/kartgame.js?t=2019072301"></script>
+    <script type="text/javascript">$.ajaxSetup({ cache: false });</script>
+
+    <!--Naver_GNB-->
+    <script type="text/javascript" src="http://js.nx.com/s1/global/ngb_channelinghead.js"  charset="euc-kr"></script>
+    <script type="text/javascript" src="http://api.game.naver.com/js/jslib.nhn?gameId=P_PN000222" charset="utf-8"></script>
+    <script type="text/javascript">
+        gdp.jslib.showGNB();
+    </script>
+    <!--//Naver_GNB-->
+
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" media="all" href="http://js.nx.com/s3/kart_v2/common/ie6.css" />
+	<![endif]-->
+	<link rel="SHORTCUT ICON" href="/glove_12.ico">
+    <script type="text/javascript" src="http://js.nx.com/s1/kart_v2/common/TweenMax.js"></script><!-- 190307 JS 추가 -->
+	<link rel="stylesheet" href="http://js.nx.com/s3/kart_v2/common/common.css" type="text/css" />
+	<link rel="stylesheet" href="http://js.nx.com/s3/kart_v2/common/aside.css" type="text/css" />
+	<link rel="stylesheet" href="http://js.nx.com/s3/kart_v2/main/main.css" type="text/css" />
+
+    <script type="text/javascript" src="/js/mainRankRenderer.js?v=2018111901"></script><!--메인랭킹 호출-->
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            NCCRecommend.Info(false, false);
+        });
+
+
+    </script>
+</head>
+<body>
+
+	<style type="text/css">
+        #opacityDiv { background-color: #000000; height:1320px; !height: 1320px; left: 0; opacity: 0.9; position: absolute; top: 0; width: 100%; z-index: 9999999; filter: alpha(opacity=90); -moz-opacity:0.9; -khtml-opacity:0.9; }
+		.ke_league_pop {position:absolute; top:170px; left:50%; margin-left:-500px;width:1000px;height:600px;background:url('http://s.nx.com/s2/game/kart/v2/event/2014/0205/league_pop.png') no-repeat;z-index:2147483647;}
+		.hidden { font-size:0; margin:0; padding:0; width:0; height:0; visibility:hidden; }
+		.btn_TIVA {position:absolute;top:386px;left:162px;width:79px;height:20px;display:block;text-indent:-999999em;overflow:hidden;}
+		.btn_TIVB {position:absolute;top:386px;left:760px;width:79px;height:20px;display:block;text-indent:-999999em;overflow:hidden;}
+		.btn_ke_league_pop_close{position:absolute;top:483px;left:462px;width:75px;height:22px;display:block;text-indent:-999999em;overflow:hidden;}
+		.btnx_ke_league_pop_close{position:absolute;top:116px;right:55px;width:30px;height:25px;display:block;text-indent:-999999em;overflow:hidden;}
+	</style>
+
+    <form method="post" action="./Index.aspx" id="m_form">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="SQxST29LDItEG1kP3N9Im/OHuCx28OiP1xiLWre9dbSHjYZloBnqAkdavvj+YPEfvVyQLZwAoHqDqlWWplMiQdC95ow=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E14AA7B2" />
+</div>
+        <!-- Naver GNB -->
+        <script type="text/javascript" src="http://js.nx.com/s1/global/ngb_channelingbody.js" charset="euc-kr"></script>
+
+        <!-- 외부 랩의 시작 -->
+		<div id="kart_wrap">
+
+			<!-- 내부 랩의 시작 -->
+
+			<div id="kart_inner_wrap">
+                <div class="quick_facebook">
+                   <a href="https://www.facebook.com/kart.nexon" target="_blank">
+                       <img src="http://s.nx.com/s2/game/kart/v2/common/btn_facebook_nexon_20170105.png" alt="카트라이더 페이스북 바로가기" />
+                   </a>
+                    <!-- 190307 추가 : tmi 배너 적용 -->
+                    <a href="http://tmi.nexon.com/kart?utm_source=KartWeb&utm_medium=referral" target="_blank" class="bn_tmi">
+                        <span class="hidden">카트라이더 전적 사이트 바로가기</span>
+                        <span class="tran1"><span class="c1"></span><span class="g1"></span></span>
+                        <span class="tran2"><span class="c2"></span><span class="g2"></span></span>
+                    </a>
+                    <script>ui.tmiBanner();</script>
+                    <!-- //190307 추가 : tmi 배너 적용 -->
+
+                </div>
+				<div id="left"></div>
+				<div id="right"></div>
+
+				<!-- 헤더 영역의 시작 -->
+
+<header>
+
+					<h1>카트라이더 메인 네비게이션</h1>
+					<div class="gnb_sec">
+						<h2 class="logo">
+                            <a href="/Main/Index.aspx"><img src="http://s.nx.com/s2/game/kart/v2/main/h_logo_20191212_51C6C64B92ED4362.png" alt="카트라이더 2015"></a>
+						</h2>
+					</div>
+					<nav>
+					<ul class="gnb_menu">
+						<li class="news">
+							<a href="/Kart/News/Notice/List.aspx" class="sp_h"><span class="blind">소식</span></a>
+							<div class="sub_gnb">
+								<div class="lst_menu">
+									<ul>
+										<li class="notice"><a href="/Kart/News/Notice/List.aspx"><span class="tit"><span class="blind">공지사항</span></span></a></li>
+										<li class="patch"><a href="/Kart/News/Patch/List.aspx"><span class="tit"><span class="blind">패치안내</span></span></a></li>
+										<li class="event"><a href="/Kart/News/Event/List.aspx"><span class="tit"><span class="blind">이벤트</span></span></a></li>
+										<li class="magazine"><a href="/Kart/News/GmMagazine/List.aspx"><span class="tit"><span class="blind">GM매거진</span></span></a></li>
+                                        <li class="media"><a href="/Kart/News/Media/List.aspx"><span class="tit"><span class="blind">미디어</span></span></a></li>
+									</ul>
+									<span class="bg_l"></span>
+									<span class="bg_r"></span>
+								</div>
+							</div>
+						</li>
+                        <li class="guide">
+							<a href="/Kart/Guide/gameInfo/Index.aspx" class="sp_h"><span class="blind">가이드</span></a>
+							<div class="sub_gnb" style="display:none">
+								<div class="lst_menu">
+									<ul>
+										<li class="begin"><a href="/Kart/Guide/gameInfo/Index.aspx"><span class="tit"><span class="blind">게임소개</span></span></a></li>
+										<li class="learn"><a href="/Kart/Guide/learn/Index.aspx"><span class="tit"><span class="blind">게임배우기</span></span></a></li>
+										<li class="item"><a href="/Kart/Guide/item/Index.aspx"><span class="tit"><span class="blind">아이템</span></span></a></li>
+                                        <li class="service"><a href="/Kart/Guide/service/Index.aspx"><span class="tit"><span class="blind">프리미엄 서비스</span></span></a></li>
+										<li class="coupon"><a href="/Kart/Guide/coupon/Index.aspx"><span class="tit"><span class="blind">쿠폰사용법</span></span></a></li>
+										<li class="merge"><a href="/Kart/Guide/merge/Index.aspx"><span class="tit"><span class="blind">합성이용법</span></span></a></li>
+									</ul>
+									<span class="bg_l"></span>
+									<span class="bg_r"></span>
+								</div>
+							</div>
+						</li>
+                        <li class="guild"><a href="/Kart/Guild/Story/List.aspx" class="sp_h"><span class="blind">클럽</span></a>
+                            <div class="sub_gnb" style="display: none">
+                                <div class="lst_menu">
+                                    <ul>
+                                        <li class="gstroy"><a href="/Kart/Guild/Story/List.aspx"><span class="tit"><span class="blind">클럽 이야기</span></span></a></li>
+                                        <li class="gsear"><a href="/Kart/Guild/Ranking/List.aspx"><span class="tit"><span class="blind">클럽랭킹</span></span></a></li>
+                                    </ul>
+                                    <span class="bg_l"></span>
+                                    <span class="bg_r"></span>
+                                </div>
+                            </div>
+                        </li>
+						<li class="ranking"><a href="/Kart/Ranking/RP/List.aspx" class="sp_h"><span class="blind">랭킹</span></a>
+							<div class="sub_gnb" style="display:none;left:160px;">
+								<div class="lst_menu">
+									<ul>
+                                        <li class="rp"><a href="/Kart/Ranking/RP/List.aspx"><span class="tit"><span class="blind">누적 RP</span></span></a></li>
+										<li class="grand"><a href="/Kart/Ranking/GrandPrix/List.aspx"><span class="tit"><span class="blind">그랑프리</span></span></a></li>
+                                        <li class="vsmode"><a href="/Kart/Ranking/Mode1vs1/List.aspx"><span class="tit"><span class="blind">1vs1 모드</span></span></a></li>
+										<li class="emblem"><a href="/Kart/Ranking/Emblem/Index.aspx"><span class="tit"><span class="blind">엠블럼</span></span></a></li>
+									</ul>
+									<span class="bg_l"></span>
+									<span class="bg_r"></span>
+								</div>
+							</div>
+						</li>
+						<li class="league"><a href="/league/2020/Season2/Index.aspx" target="_blank" class="sp_h"><span class="blind">리그</span></a></li>
+                        <li class="community"><a href="/Kart/Community/Free/List.aspx" class="sp_h"><span class="blind">커뮤니티</span></a>
+                            <div class="sub_gnb" style="display: none">
+                                <div class="lst_menu">
+                                    <ul>
+                                        <li class="f_board"><a href="/Kart/Community/Free/List.aspx"><span class="tit"><span class="blind">자유게시판</span></span></a></li>
+                                        <li class="info_board"><a href="/Kart/Community/TipInfo/List.aspx"><span class="tit"><span class="blind">공략게시판</span></span></a></li>
+                                        <li class="img_board"><a href="/Kart/Community/Screenshot/List.aspx"><span class="tit"><span class="blind">이미지게시판</span></span></a></li>
+                                        <li class="idea_board"><a href="/Kart/Community/Idea/List.aspx"><span class="tit"><span class="blind">아이디어게시판</span></span></a></li>
+                                        <li class="qsearch_board"><a href="/Kart/Community/Poll/List.aspx"><span class="tit"><span class="blind">설문조사</span></span></a></li>
+                                    </ul>
+                                    <span class="bg_l"></span>
+                                    <span class="bg_r"></span>
+                                </div>
+                            </div>
+                        </li>
+						<li class="pds"><a href="/Kart/Pds/Download/List.aspx" class="sp_h"><span class="blind">자료실</span></a>
+							<div class="sub_gnb" style="display:none;left:751px;">
+								<div class="lst_menu">
+									<ul>
+										<li class="download"><a href="/Kart/Pds/Download/List.aspx"><span class="tit"><span class="blind">다운로드</span></span></a></li>
+										<li class="kart_movie"><a href="/Kart/Pds/KartMovie/View.aspx"><span class="tit"><span class="blind">카트영상</span></span></a></li>
+                                        <li class="openapi"><a href="https://developers.nexon.com/kart" target="_balnk"><span class="tit"><span class="blind">OpenAPI</span></span></a></li>
+									</ul>
+									<span class="bg_l"></span>
+									<span class="bg_r"></span>
+								</div>
+							</div>
+						</li>
+						<li class="customer"><a href="/Kart/Customer/HelpDesk/index.aspx" class="sp_h"><span class="blind">고객지원</span></a>
+							<div class="sub_gnb sub_gnb_n" style="display:none;left:805px;">
+								<div class="lst_menu" style="width:225px;">
+									<ul>
+										<li class="gameer"><a href="/Kart/Customer/HelpDesk/index.aspx" id="btnCustomerCenter"><span class="tit"><span class="blind">게임문의</span></span></a></li>
+                                        <li class="propose"><a href="/Kart/Customer/Suggestions/List.aspx"><span class="tit"><span class="blind">건의하기</span></span></a></li>
+										<li class="faq"><a href="javascript:;" onclick="javascript:kart.support.openHelpPopup();"><span class="tit"><span class="blind">1:1 문의</span></span></a></li>
+									</ul>
+									<span class="bg_l"></span>
+									<span class="bg_r"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					</nav>
+				</header>
+				<!-- 헤더 영역의 끝 -->
+
+				<!-- 오른쪽 네비게이션 영역의 시작 -->
+                <div id="kart_main_secinner">
+				<aside>
+
+					<div class="play_box">
+						<div class="go_game">
+                            <!--<button type="button" onclick="javascript:GnxGameStartOnClick();return false;"><img src="http://s.nx.com/s2/game/kart/v2/main/@start_btn.jpg" width="246" height="148" alt="게임시작"></button>-->
+                            <script type="text/javascript">
+								strOSInfo = navigator.appVersion.toLowerCase();
+								//if (strOSInfo.indexOf("windows nt 6.2") > -1) {
+									$(".go_game").html("<a class='btn_gamestart' title='게임시작' onclick='javascript:GnxGameStartOnClick();return false;' href='#'><img src='http://s.nx.com/s2/game/kart/v2/flash/btn_gameStart.jpg' alt='게임시작'></a>");
+								//} else {
+								//    if (ui.browser.appVersion.indexOf("Trident/7.0") > -1 || ui.browser.appVersion.indexOf("MSIE 10.0") > -1) {
+								//        $(".go_game").html("<a class='btn_gamestart' title='게임시작' onclick='javascript:GnxGameStartOnClick();return false;' href='#'><img src='http://s.nx.com/s2/game/kart/v2/flash/btn_gameStart.jpg' alt='게임시작'></a>");
+								//    } else {
+								//        var flashNav = new ngbFlashActivate();
+								//        flashNav.init('http://s.nx.com/s2/game/kart/v2/flash/kart_startGame_131212.v1.swf', '246', '148', 'gameStartFla');
+								//        flashNav.parameter('wmode', 'transparent');
+								//        flashNav.parameter('allowScriptAccess', 'always');
+								//        flashNav.accessibility = "<a class='btn_gamestart' title='게임시작' onclick='javascript:GnxGameStartOnClick();return false;' href='#'><img src='http://s.nx.com/s2/game/kart/v2/flash/btn_gameStart.jpg' alt='게임시작'></a>";
+								//        flashNav.loadFlash();
+								//    }
+								//}
+                            </script>
+
+						</div>
+						<div class="add_option">
+							<ul>
+								<li><button type="button" class="sp_h btn_download" onclick="location.href='/Kart/Pds/Download/List.aspx';"><span class="blind">게임다운로드</span></button></li>
+								<li><button type="button" class="sp_h btn_guide" onclick="location.href='/Kart/guide/gameInfo/Index.aspx';"><span class="blind">게임 가이드</span></button></li>
+							</ul>
+						</div>
+					</div>
+
+
+                        <div id="login">
+
+							<fieldset>
+								<legend><span class="blind">내 정보 영역</span></legend>
+
+								<div class="my_infos">
+									<p class="user_name"><strong>나카트초본데</strong> 님</p>
+									<div class="data_bx" style="margin-top:18px">
+										<div class="thumb">
+											<a>
+												<img src="http://avatarimg.kart.nexon.com/2019/172/276/336276172.png" alt="내 카트 이미지" onerror="this.src='http://s.nx.com/s2/game/kart/v2/main/avatar_default.gif';">
+												<span class="icon"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/globe/875.gif' alt='노란장갑 네손가락' width='18' height='20'/></span>
+                                                <!-- 190320 추가2 : 등급 아이콘 추가  -->
+
+                                                <!-- //190320 추가2 : 등급 아이콘 추가  -->
+											</a>
+										</div>
+										<div class="data_sec">
+											<ul>
+
+                                                <!-- 190320 추가3 : RP 정보 추가  -->
+                                                <li class="rp">
+                                                    <em>RP</em>
+                                                    <span>146</span>
+                                                </li>
+                                                <!-- //190320 추가3 : RP 정보 추가  -->
+											</ul>
+
+											<button type="button" class="sp_com btn_mycars" onclick="javascirpt:MyGaragePop('나카트초본데');"><span class="blind">내차고</span></button>
+
+										</div>
+									</div>
+									<button type="button" class="sp_com btn_logout" id="btnLogout"><span class="blind">로그아웃</span></button>
+								</div>
+							</fieldset>
+						</div>
+                        <div class="member_menus btnoptionPersonal">
+                            <a href="#" id="btnMyInfo" style="width:248px;"><span class="blind">개인정보 설정</span></a>
+                        </div>
+
+
+					<section class="notice_side">
+
+<section class="news">
+							<h3><span class="sp_h"><span class="blind">소식</span></span></h3>
+							<ul class="news_viewlist">
+
+                                        <li><span class="txt_ellipsis"><a href="/Kart/News/Notice/view.aspx?NoticeArticleSN=130815" ><span class="tit">[공지]</span>최싄카트 클럽전 시즌2 참...</a></span></span></li>
+
+                                        <li><span class="txt_ellipsis"><a href="/Kart/News/Notice/view.aspx?NoticeArticleSN=130809" ><span class="tit">[공지]</span>U-OTP 신규가입 중단 ...</a></span></span></li>
+
+
+
+                                        <li><span class="txt_ellipsis"><a href="/Kart/News/Patch/view.aspx?n4ArticleSN=75150" ><span class="tit">[패치]</span>7/9(목) 패치 안내</a></span></li>
+
+
+
+                                        <li><span class="txt_ellipsis"><a href="/board/163872790/75150/" target="_self"><span class="tit">[이벤트]</span>무한부스터 스피드 R 복불복</a></span></li>
+
+
+
+                                        <li><span class="txt_ellipsis"><a href="/Kart/News/GmMagazine/view.aspx?n4ArticleSN=146" ><span class="tit">[매거진]</span>5월의 매거진 - 2020 카트...</a></span></li>
+
+							</ul>
+							<span class="btn_ref"><a href="/Kart/News/Notice/List.aspx"><span class="sp_com"></span><span class="blind">더보기</span></a></span>
+						</section>
+
+                        <section class="qsearch_nv">
+							<h3><span class="sp_h"><span class="blind">설문조사</span></span></h3>
+							<div class="group_data">
+
+                                    <p><a href="/Kart/Community/Poll/View.aspx"><span>8월의 R 시리즈 카트바디는 내가 선택한다!</span></a></p>
+
+								<button class="sp_com btn_entry" type="button" onclick="javascript:location.href='/Kart/Community/Poll/View.aspx';"><span class="blind">참여하기</span></button>
+							</div>
+							<span class="btn_ref"><a href="/Kart/Community/Poll/List.aspx"><span class="sp_com"></span><span class="blind">더보기</span></a></span>
+						</section>
+
+                        <section class="kart_fsear_nv">
+							<div class="btns_nv">
+								<a href="javascript:openHelpPopup();" class="btn_er"><span class="blind">1:1문의</span></a>
+                                <a href="https://help.naver.com/support/service/main.nhn?serviceNo=801" target="_blank" class="btn_help" ><span class="blind"></span></a>
+							</div>
+						</section>
+
+<script type="text/javascript">
+	function openHelpPopup() {
+		kart.support.openHelpPopup();
+	}
+</script>
+
+
+
+					</section>
+
+
+                    <section class="recommend_mov" id="NCCRecommend" style="display:none;"></section>
+				</aside>
+				<!-- 오른쪽 네비게이션 영역의 끝 -->
+
+				<!-- 섹션 영역의 시작 -->
+				<section id="kart_main_container">
+					<section class="promotion">
+						<ul class="banner_list">
+
+
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200701_r_main_59404B8A6D98D9C4.jpg">
+                                                <a href="/league/2020/Season2/Index.aspx" target="_blank">
+                                                    <img src="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200701_r_main_59404B8A6D98D9C4.jpg" alt="카트라이더 리그 시즌2 예선전 신청"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_new_club_4jhtkdhtgl.jpg">
+                                                <a href="/Kart/News/Notice/view.aspx?noticearticlesn=130815" target="_self">
+                                                    <img src="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_new_club_4jhtkdhtgl.jpg" alt="최싄카트 클럽전 시즌2 참가 신청"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_r_main_90391A0D7E78187C.jpg">
+                                                <a href="/board/163872790/75150/" target="_self">
+                                                    <img src="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_r_main_90391A0D7E78187C.jpg" alt="무한부스터 스피드 R 복불복"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_r_main_CABE93D42BF914E6.jpg">
+                                                <a href="/board/163872790/75150/" target="_self">
+                                                    <img src="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_r_main_CABE93D42BF914E6.jpg" alt="코튼 SR-R 판매"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_r_main_34DBD7C691EE2E71.jpg">
+                                                <a href="/board/163872790/75150/" target="_self">
+                                                    <img src="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_r_main_34DBD7C691EE2E71.jpg" alt="일반 합성 리스트 개편"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_r_main_A8EC1944A46146FC.jpg">
+                                                <a href="/board/163872790/75150/" target="_self">
+                                                    <img src="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_r_main_A8EC1944A46146FC.jpg" alt="풍성한 합성 이벤트"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200702_r_main_0A6E32BF2594B65E.jpg">
+                                                <a href="/board/163872790/75149/" target="_self">
+                                                    <img src="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200702_r_main_0A6E32BF2594B65E.jpg" alt="스프린트 Z7-R 판매"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200625_r_main_E6B10F6D2E33D5A6.jpg">
+                                                <a href="/board/163872790/75148/" target="_self">
+                                                    <img src="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200625_r_main_E6B10F6D2E33D5A6.jpg" alt="타이탄 탱크-R 판매"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200618_r_main_CBC8AF296BA5B012.jpg">
+                                                <a href="/board/163872790/75147/" target="_self">
+                                                    <img src="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200618_r_main_CBC8AF296BA5B012.jpg" alt="세이버 SR-R 판매"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200618_r_main_052677E3F068BF8E.jpg">
+                                                <a href="/board/163872790/75147/" target="_self">
+                                                    <img src="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200618_r_main_052677E3F068BF8E.jpg" alt="히든 카트 보석 조합"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200618_r_main_0A4129F3C767712A.jpg">
+                                                <a href="/events/2020/0611/Event.aspx" target="_blank">
+                                                    <img src="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200618_r_main_0A4129F3C767712A.jpg" alt="다오의 캡슐머신"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200611_r_main_72EB077DBC54027C.jpg">
+                                                <a href="/board/163872790/75146/" target="_self">
+                                                    <img src="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200611_r_main_72EB077DBC54027C.jpg" alt="스위피-R 판매"></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <button type="button"><span class="blind">|</span></button>
+                                            <div class="pic" data-playlog-cate="KART_BANNER_MAIN" data-playlog-name="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200514_r_main_DDE89DE9D94FB52B.jpg">
+                                                <a href="/board/163872790/75138/" target="_self">
+                                                    <img src="http://s.nx.com/s2/game/kart/v2/banner/main/rolling2020/200514_r_main_DDE89DE9D94FB52B.jpg" alt="블루 마스터리 기어"></a>
+                                            </div>
+                                        </li>
+
+						</ul>
+					</section>
+					<section class="kart_container">
+						<section class="kart_ingame">
+							<div class="ingame_sec">
+								<p class="tit"><span class="blind">카트 인게임</span></p>
+								<div class="rolling_txt">
+									<marquee behavior="scroll" direction="left" scrollamount="2" width="460">
+									<ul>
+
+									            <li>7/9(목) ~ 7/15(수) 럭키 위크 출석 체크! SVIP 핸드봉과 함께 업그레이드 미션하고 전설의 카트 박스 가져가세요~</li>
+
+									            <li>7/9(목) ~ 7/22(수) 가위바위보 미니게임에서 네오를 이기고 다양한 보상을 받아가세요~</li>
+
+									            <li>7/9(목) ~ 7/22(수) 합성 체험 이벤트! 이벤트 기간 동안 일반 합성을 이용하면 티타늄 기어 1개와 100 코인을 드려요~</li>
+
+									            <li>7/9(목) ~ 7/22(수) 스팅레이 X 획득 확률이 7배 증가! 스팅레이 X가 없다면 지금이 획득 찬스!</li>
+
+									            <li>7/9(목) ~ 7/22(수) 일반 합성 리스트 개편 이벤트! 코튼 SR-R, 백기사 X, 황금 축구공 X 등 다양한 카트바디를 일반 합성에서 만나보세요!</li>
+
+									            <li>7/9(목) ~ 8/19(수) 부드럽고 우아한 라인으로 레이싱의 한계를 뛰어넘는 코튼 SR-R을 상점에서 만나보세요!</li>
+
+									            <li>7/9(목) ~ 7/22(수)  무한부스터 R 복불복 개인전 모드에서 R 시리즈 카트바디를 만나보세요! </li>
+
+									            <li>7/2(목) ~ 7/12(일) 8월의 R 시리즈는 내가 선택한다! R 시리즈 출시를 원하는 카트바디를 설문조사 댓글에 작성해주세요♥</li>
+
+									            <li>7/2(목) ~ 7/15(수) 매일 첫 접속 시 스프린트 Z7-R 상자 1개를 무조건 챙겨드립니다!!</li>
+
+									            <li>7/2(목) ~ 7/15(수) 상점에서 스프린트 Z7-R 구매 시 스프린트 Z7-R 상자를 보너스로 드려요~</li>
+
+									            <li>7/2(목) ~ 8/12(수) 스프린트 Z7-R 카트바디로 최강의 스프린터가 되어보세요!</li>
+
+									            <li>6/25(목) ~ 8/5(수) 돌아온 붐힐마을의 전차, 타이탄 탱크-R가 6주간 상점에 등장합니다!</li>
+
+									            <li>6/25(목) ~ 7/15(수) 프로토 바이크 X 조각 5개로 프로토 바이크 X 무제한과 교환 가능!</li>
+
+									            <li>6/18(목) ~ 7/29(수) 깔끔하고 안정적인 드리프트를 선보이는 레전드 등급 세이버 SR-R을 상점에서 만나보세요.</li>
+
+									            <li>6/18(목) ~ 7/15(수) 세이버 SR-R 상자를 열면 히든 카트 보석이 등장합니다. 히든 카트 보석을 모아 다양한 아이템을 조합해보세요.</li>
+
+									            <li>6/18(목) ~ 7/22(수) 히든 카트 보석을 조합하여 전설의 카트 박스를 포함한 다양한 아이템을 획득해보세요.</li>
+
+									            <li>6/11(목) ~ 7/22(수) 아이템전에서 특수한 능력을 낼 수 있는 스위피-R을 상점에서 만나보세요~</li>
+
+									</ul>
+                                    </marquee>
+								</div>
+								<button type="button" class="btn_txprev" onclick="ui.noti_view(1)"><span class="sp_com"><span class="blind">이전 내용보기</span></span></button>
+								<button type="button" class="btn_txnext" onclick="ui.noti_view(2)"><span class="sp_com"><span class="blind">다음 내용보기</span></span></button>
+							</div>
+						</section>
+						<!-- 상시배너영역 왼쪽의 시작 -->
+						<section class="banner_left">
+
+							        <a href="/board/163872790/75150/" target="_self"><img src="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_i_01_037EEBF58AFE8232.png" alt="||||">
+								        <span class="mask"></span>
+							        </a>
+
+						</section>
+						<!-- 상시배너영역 오른쪽의 끝 -->
+
+						<!-- 상시배너영역 오른쪽 시작 -->
+						<section class="banner_right">
+
+							        <a href="/board/163872790/75150/" target="_self"><img src="https://lwi.nexon.com/kart/banner/2020/0709_banner/200709_i_02_037EEBF58AFE8232.png" alt="||||">
+								        <span class="mask"></span>
+							        </a>
+
+						</section>
+						<!-- 상시배너영역 오른쪽의 끝 -->
+
+                            <!--<div style="display: none;"> -->
+                            <!--  미디어 콘텐츠 시작 -->
+                            <section class="media_story">
+                                <div class="hx">
+                                    <h3 class="sp_h"><span class="blind">미디어 속 카트 이야기</span></h3>
+                                </div>
+
+                                <div class="media-list">
+
+
+                                            <ul>
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=202007091217333030b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5341308770544781644" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[정준의 카트 리포팅] Who's Next?</strong>
+                                                    </a>
+                                                    <p class="cont">한화생명 이스포츠 올스타전 시즌 2가 팬 여러분들의 사랑 속에 결승전을 마쳤습니다.</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=202007051458575367b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4692843265186071599" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[창간 기획] '황제' 문호준이 꼽은 '포스트 문호준'(영상)</strong>
+                                                    </a>
+                                                    <p class="cont">데일리e스포츠는 창간 12주년을 맞아 카트라이더 '황제' 문호준과의 영상 인터뷰를 진행했습니다. 화보 촬영과 함께 진행된 영상 촬영에서 문호준은 어느 때보다 솔직 담백한 이야기를 들려 주었습니다.</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=202006251555566372b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4981073705762292675" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[창간 기획] '슬기로운 e스포츠 생활' 꿈꾸는 넥슨 e스포츠팀 심현 부장</strong>
+                                                    </a>
+                                                    <p class="cont">올 1월 발생한 코로나19 바이러스는 단기간에 전세계로 퍼지면서 사람들의 생활 양식을 바꿨다. 만나고 이동하고 모이고 얼굴을 맞대고 함께 해야 한다고 생각되던 인류의 활동 방식은 만나지 못하고 모이지 않아야 하는 쪽으로 변했다.</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=202007010952208330b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4620732821575567792" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[창간 기획] 살아있는 전설, 문호준의 3색 매력...1편(화보)</strong>
+                                                    </a>
+                                                    <p class="cont">데일리e스포츠가 창간 12주년을 맞아 카트라이더 리그를 넘어서 e스포츠 역사를 다시 써내려 가고 있는 '카트 황제' 문호준을 만나 화보 촬영 및 인터뷰를 진행했습니다. 크리에이터로서도 활발한 활동을 펼치고 있는 문호준의 그동안 볼 수 없었던 다양한 매력들을 만나볼 수 있는 좋은 기회가 될 것입니다.</p>
+                                                </li>
+
+                                            </ul>
+
+
+                                            <ul>
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=202006261412358816b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[정준의 카트 리포팅] 김응태와 최영훈의 놀라운 '리얼 버라이어티'</strong>
+                                                    </a>
+                                                    <p class="cont">한화생명 이스포츠 카트라이더 올스타전 시즌 2가 돌아왔습니다. 시즌 1은 리그 공백기의 아쉬움을 달래기 위한 깜짝 이벤트였지만 시즌2는 공식리그의 준비기간에 즐길 수 있는 하나의 콘텐츠로 자리잡은 느낌입니다. 많은 팬 여러분들의 성원 덕분에 시즌2가 진행될 수 있었고, 개막전에 최대 7천명 이상의 동시시청자수를 기록하며 좋은 출발을 할 수 있었습니다. 진심</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.inven.co.kr/webzine/news/?news=240323&iskin=esports" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[카트 리그] "우승까지 아직 한 트랙 남았다" - 락스 게이밍 박인재, 이재혁 인터뷰</strong>
+                                                    </a>
+                                                    <p class="cont">락스 게이밍의 감독을 맡은 박인재는 카트라이더 선수 시절부터 연습량이 엄청난 것으로 유명했습니다. 같은 맵을 10시간씩 파면서 연습했다는 이야기는 꽤 많이 알려진 일화입니다. 그래서 박인재 감독은 노력이 아니라 재능에 대해 이야기하는 걸 그리 좋아하지 않는 편이라고 말했습니다.</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=202006251321153796b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">문호준 V13 달성 35만명 봤다...역대 2위 기록</strong>
+                                                    </a>
+                                                    <p class="cont">문호준이 개인전-팀전에서 모두 우승하며 V13을 달성한 카트라이더 결승전 누적 시청자수가 35만 명으로 집계됐다.</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.inven.co.kr/webzine/news/?news=239987&iskin=esports" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">한화생명e스포츠 카트라이더 올스타전 시즌2, 23일 개최</strong>
+                                                    </a>
+                                                    <p class="cont">e스포츠 엔터테인먼트 기업 스틸에잇은 크레이지레이싱 카트라이더의 e스포츠대회 ‘한화생명e스포츠 카트라이더 올스타전 시즌2’를 개최한다고 19일 밝혔다.</p>
+                                                </li>
+
+                                            </ul>
+
+
+                                            <ul>
+
+                                                <li>
+                                                    <a href="http://www.newsworks.co.kr/news/articleView.html?idxno=464640" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">"카트 타고 데이터 받자"…넥슨, SKT와 프로모션 진행</strong>
+                                                    </a>
+                                                    <p class="cont">[뉴스웍스=장대청 기자] 넥슨이 SK텔레콤과 함께 캐주얼게임 3종에서 제휴 프로모션을 진행한다.</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=202006091544207173b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[카트 릴레이 인터뷰] 시작부터 꿈이 달랐던 락스 송용준</strong>
+                                                    </a>
+                                                    <p class="cont">프로게이머들의 꿈은 대부분 그 종목에서 한 획을 그은 레전드 선수처럼 되는 것입니다. 리그 오브 레전드에서는 ‘페이커’ 이상혁이 모두의 이상향이고 카트라이더 리그에서는 문호준이 그들의 롤모델일 것입니다.</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=202006031431231228b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">무기한 휴식 선언한 유창현 "오래 전부터 생각했던 일"</strong>
+                                                    </a>
+                                                    <p class="cont">무기한 휴식 선언했던 유창현이 이같은 선택을 한 이유를 전했다. </p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.fomos.kr/esports/news_view?entry_id=89385" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[모경민의 클로즈업] 폭풍 뚫고 트로피 쥔 한화생명 카트팀, 언덕 올라 정상에 서기까지</strong>
+                                                    </a>
+                                                    <p class="cont">2019 카트라이더 리그 시즌2 결승전에서 만난 한화생명e스포츠와 샌드박스 게이밍. 두 팀은 2020 카트라이더 리그 시즌1 개막전에서 다시 마주쳤다. 결승전 리매치로 많은 관심이 모였으나 한화생명은 0대6 참패로 개막전을 마무리했다. 한화생명의 위기는 여기서 그치지 않았다. 시즌 도중 아이템전 에이스 이은택이 경기에서 빠지고 박도현이 아이템전까지 치러야 </p>
+                                                </li>
+
+                                            </ul>
+
+
+                                            <ul>
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=2020060214134852b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[피플] 은퇴 선언한 '황제' 문호준, 14년 여정의 마지막 이야기</strong>
+                                                    </a>
+                                                    <p class="cont">많은 사람들이, 박수칠 때 떠나는 것은 정말 멋있는 일이라고 말합니다. 최정상에 있을 때 물러나게 되면 사람들의 인상에 깊게 남게 되기 때문일까요, 아니면 떠나야 할 때를 분명히 알고 가는 이의 뒷모습은 아름답기 때문일까요?</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.enewstoday.co.kr/news/articleView.html?idxno=1390712" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">넥슨, 카트라이더X슬로우애시드 의류 13종 무신사 스토어 출시</strong>
+                                                    </a>
+                                                    <p class="cont">[이뉴스투데이 고선호 기자] ㈜넥슨은 슬로우애시드와 손잡고 온라인 패션 스토어 무신사를 통해 크레이지레이싱 카트라이더 컬래버레이션 의류를 출시했다고 1일 밝혔다.  출처 : 이뉴스투데이(http://www.enewstoday.co.kr)</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.tgdaily.co.kr/news/articleView.html?idxno=220979" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">‘카트라이더 리그’ 보는 재미 호평</strong>
+                                                    </a>
+                                                    <p class="cont">넥슨의 온라인 레이싱 게임  '카트라이더' e스포츠 'SKT 점프 카트라이더 리그 2020 시즌 1 개인전' 결승이 최근 팬들의 호평 속에 마무리 됐다. 대회는 넥슨아레나에서 무관중으로 개최됐다.</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=202005261531187594b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[정준의 카트 리포팅] 문호준 그리고 또 문호준</strong>
+                                                    </a>
+                                                    <p class="cont">2020년 1월 4일 개막. 2020년 5월 23일 결승전. 무려 141일동안의 긴 여정을 마무리하기 위해 선수들이 모인 넥슨 아레나에는 무거운 적막감이 흘렀습니다. 가장 익숙한 경기장이지만 가장 필요한 팬들의 응원과 함성이 들리지 않았기 때문일까요. 개인전 결승전을 준비하고 있는 선수들의 표정에 왠지모를 허전함이 느껴집니다.</p>
+                                                </li>
+
+                                            </ul>
+
+
+                                            <ul>
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=202005271417096792b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[위클리e스포츠] 양대 우승 달성한 살아있는 전설(영상)</strong>
+                                                    </a>
+                                                    <p class="cont">데일리e스포츠는 오즈TV와 협업을 통해 리그 오브 레전드 이외에 카트라이더, 스타크래프트2, 스타크래프트1, 배틀그라운드 등 다양한 게임 리그 소식을 전하는 '위클리 e스포츠'를 영상으로 선보일 예정입니다. 기사에는 나오지 않은 비하인드 스토리나 팬들이 접하기 힘든 다양한 이야기를 들려드릴테니 많은 기대 부탁 드립니다</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="https://www.thisisgame.com/webzine/news/nboard/4/?n=104586" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">"허탈감 몰려왔다" 카트 황제 문호준 '개인전' 은퇴</strong>
+                                                    </a>
+                                                    <p class="cont"> e스포츠의 살아있는 전설, 문호준이 개인전 은퇴를 선언했다. 25일 문호준은 개인 방송을 통해 향후  개인전에 참가하지 않겠다는 의사를 전했다. 전날 은퇴를 선언했다가 번복한 지 하루 만의 일이다.</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.dailyesports.com/view.php?ud=202005270013225999b78bb58252_27" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[칼럼] 락스 박인재 감독이 기억하는 '황제' 문호준 이야기</strong>
+                                                    </a>
+                                                    <p class="cont">안녕하세요. 카트라이더 전 프로게이머이자 지금은 락스 감독을 맡고 있는 박인재입니다. 이렇게 글로 인사를 드리게 돼 반갑습니다.</p>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="http://www.inven.co.kr/webzine/news/?news=238758&iskin=esports" target="_blank">
+                                                        <span class="img">
+
+                                                                    <img src="" style="display:none;" class="mediaImg">
+
+                                                        </span>
+                                                        <strong class="subject">[카트 리그] 문호준, "30살이 되서도 카트 잘할 자신 있어"</strong>
+                                                    </a>
+                                                    <p class="cont">23일 넥슨 아레나에서 열린 2020 SKT JUMP 카트라이더 리그 시즌1 개인전 결승 경기에 한화생명e스포츠 문호준이 우승을 차지했다. 문호준은 역대급으로 치열하게 진행된 개인전 경기에 에이스결정전까지 가는 접전을 벌였고, 유창현과의 1:1 대결을 승리하면서 다시 문호준의 시대가 도래했음을 알렸다. 문호준은 함께 해준 팀원들에게 고맙다는 말을 전했다.</p>
+                                                </li>
+
+                                            </ul>
+
+
+                                </div>
+
+                                <div class="controller">
+                                    <!-- 페이징 카운트 -->
+                                    <span class="page"><em class="curr">1</em> / <span class="total">5</span>
+                                    </span>
+                                    <button type="button" class="prev"><span class="sp_com"></span><span class="blind">이전 페이지</span></button>
+                                    <button type="button" class="next"><span class="sp_com"></span><span class="blind">다음 페이지</span></button>
+                                </div>
+                                <span class="btn_ref"><a href="/Kart/News/Media/List.aspx"><span class="sp_com"></span><span class="blind">미디어 더 보기</span></a></span>
+                            </section>
+                            <!-- 미디어 콘텐츠 끝 -->
+                             <!--</div> -->
+
+						<!-- 우리들의 카트 이야기 -->
+						<section class="kart_main_story">
+							<div class="hx"><h3 class="sp_h"><span class="blind">우리들의 카트 이야기</span></h3></div>
+							<div id="story_list_wrap">
+							<ul class="story_list">
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit.gif" alt="자유게시판"><span class="txt_ellipsis"><a href="/Kart/Community/Free/view.aspx?n4articlesn=910522">이제 수업 체육만 남았네</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/2990000.gif' alt='무지개금메달' width='18' height='20'/><span class="player">서울비행기</span></span></div>
+								        </li>
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit.gif" alt="자유게시판"><span class="txt_ellipsis"><a href="/Kart/Community/Free/view.aspx?n4articlesn=910521">흑기vs백기vs드세vs스팅vs져스테스vs파라곤</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/2990000.gif' alt='무지개금메달' width='18' height='20'/><span class="player">커플구해여</span></span></div>
+								        </li>
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit.gif" alt="자유게시판"><span class="txt_ellipsis"><a href="/Kart/Community/Free/view.aspx?n4articlesn=910520">본계는 몇천개해도 안나오더니</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/2990000.gif' alt='무지개금메달' width='18' height='20'/><span class="player">윶창현</span></span></div>
+								        </li>
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit.gif" alt="자유게시판"><span class="txt_ellipsis"><a href="/Kart/Community/Free/view.aspx?n4articlesn=910518">이야 축구방 개꿀잼</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/386184.gif' alt='블루스타1' width='18' height='20'/><span class="player">기궤상어X</span></span></div>
+								        </li>
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit2.gif" alt="공략게시판"><span class="txt_ellipsis"><a href="/Kart/Community/TipInfo/view.aspx?n4articlesn=163086">코튼 sr-r 무료로 얻는 법</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/1580861.gif' alt='초록은메달' width='18' height='20'/><span class="player">라이브사비</span></span></div>
+								        </li>
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit2.gif" alt="공략게시판"><span class="txt_ellipsis"><a href="/Kart/Community/TipInfo/view.aspx?n4articlesn=163085">커리어-엄마가 오셔서 깨는법</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/2990000.gif' alt='무지개금메달' width='18' height='20'/><span class="player">잘나간자동차</span></span></div>
+								        </li>
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit3.gif" alt="이미지게시판"><span class="txt_ellipsis"><a href="/Kart/Community/Screenshot/view.aspx?n4articlesn=397322">✔바위x6</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/2990000.gif' alt='무지개금메달' width='18' height='20'/><span class="player">흰늑대할머니</span></span></div>
+								        </li>
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit3.gif" alt="이미지게시판"><span class="txt_ellipsis"><a href="/Kart/Community/Screenshot/view.aspx?n4articlesn=397321">코튼SR-R  획득...</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/2990000.gif' alt='무지개금메달' width='18' height='20'/><span class="player">엘마시공</span></span></div>
+								        </li>
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit2.gif" alt="공략게시판"><span class="txt_ellipsis"><a href="/Kart/Community/TipInfo/view.aspx?n4articlesn=163083">라이센스 커트라인</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/708863.gif' alt='노랑동메달' width='18' height='20'/><span class="player">사기꾼김사기</span></span></div>
+								        </li>
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit2.gif" alt="공략게시판"><span class="txt_ellipsis"><a href="/Kart/Community/TipInfo/view.aspx?n4articlesn=163072">가위바위보 보상으로 코튼SR-R 얻...</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/1409717.gif' alt='노랑은메달' width='18' height='20'/><span class="player">코카일</span></span></div>
+								        </li>
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit3.gif" alt="이미지게시판"><span class="txt_ellipsis"><a href="/Kart/Community/Screenshot/view.aspx?n4articlesn=397320">성공......</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/2990000.gif' alt='무지개금메달' width='18' height='20'/><span class="player">신유c</span></span></div>
+								        </li>
+
+								        <li>
+                                            <div class="info_sec"><span class="tit"><img src="http://s.nx.com/s2/game/kart/v2/main/h_btit3.gif" alt="이미지게시판"><span class="txt_ellipsis"><a href="/Kart/Community/Screenshot/view.aspx?n4articlesn=397319">웃프다요..</a></span></span><span class="player_info"><img class='glove' src='http://s.nx.com/s2/game/kart/kart/hands2/2990000.gif' alt='무지개금메달' width='18' height='20'/><span class="player">신유c</span></span></div>
+								        </li>
+
+							</ul>
+                            </div>
+							<span class="btn_ref"><a href="/Kart/Community/Free/List.aspx"><span class="sp_com"></span><span class="blind">새로고침</span></a></span>
+						</section>
+						<!-- NO.1 카트 그랑프리 -->
+						<section class="kart_main_rank">
+							<div class="hx"><h3 class="sp_h"><span class="blind">NO.1 카트 그랑프리</span></h3></div>
+                            <div class="search_rank">
+                                <select id="GrandPrixName" onchange='javascript:rankingValue(this.value);'>
+                                    <option>-로디 그랑프리-</option>
+                                </select>
+								<button type="button" class="search_btn" onclick="javascript:rankingValue_search();"><span class="blind">검색</span></button>
+                            </div>
+
+                            <table class="rank_lst" id="tblranking">
+                                <colgroup>
+                                    <col style="width:55px" />
+                                    <col style="width:174px" />
+                                    <col style="width:90px" />
+                                </colgroup>
+                                <thead class="thead">
+                                    <tr>
+                                        <th><span class="blind">랭킹</span></th>
+                                        <th><span class="blind">라이더 명</span></th>
+                                        <th><span class="blind">포인트</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+								<!-- 그랑프리 아이템 bind start -->
+                                   <!--ajax호출 /js/mainRankRenderer.js-->
+								<!-- 그랑프리 아이템 bind end -->
+                                </tbody>
+                            </table>
+
+							<span class="btn_ref"><a href="/Kart/Ranking/GrandPrix/List.aspx"><span class="sp_com"></span><span class="blind">새로고침</span></a></span>
+						</section>
+						<!-- NO.1 카트 그랑프리 끝 -->
+					</section>
+				</section>
+				<!-- 섹션 영역의 끝 -->
+
+
+            </div>
+			</div>
+
+			<!-- 내부 랩의 끝 -->
+
+			<footer>
+				<div class="footer_bx naver_footer">
+                    <ul class="link-list">
+                        <li><a href="http://company.nexon.com/" target="_blank" class="company">회사소개</a></li>
+                        <li><a href="http://career.nexon.com/" target="_blank" class="recruitment">채용안내</a></li>
+                        <li><a href="https://member.nexon.com/policy/stipulation.aspx" target="_blank" class="rule_case">이용약관</a></li>
+                        <li><a href="#" onclick="window.open('/Popup/GameGrade.html','', 'toolbar=no, scrollbars=no, width=500, height=440'); return false;" class="game_level">게임이용등급 안내</a></li>
+                        <li><a href="https://member.nexon.com/policy/privacy.aspx" target="_blank"  class="uesr_data">개인정보 처리방침</a></li>
+                        <li><a href="https://member.nexon.com/policy/youthprotection.aspx" target="_blank" class="rule_info">청소년 보호정책</a></li>
+                        <li><a href="http://pcbang.nexon.com/" target="_blank" class="pc_bang">넥슨 PC방</a></li>
+                        <li><a href="#" onclick="window.open('/Popup/operation_rule_kart.html','', 'toolbar=no, scrollbars=no, width=625, height=550'); return false;" class="rule">운영정책</a></li>
+                    </ul>
+                    <div class="info">
+                        <dl>
+                            <dt>(주)넥슨코리아 대표이사</dt>
+                            <dd>이정헌</dd>
+                            <dt class="blind">주소</dt>
+                            <dd>경기도 성남시 분당구 판교로 256번길 7</dd>
+                            <dt>전화 :</dt>
+                            <dd>1588-7701</dd>
+                            <dt>팩스 :</dt>
+                            <dd>0502-258-8322</dd>
+                            <dt>E-mail :</dt>
+                            <dd><a href="mailto:contact-us@nexon.co.kr">contact-us@nexon.co.kr</a></dd>
+                            <dt>사업자등록번호 :</dt>
+                            <dd>220-87-17483호</dd>
+                            <dt>통신판매업 신고번호 :</dt>
+                            <dd>제2013-경기성남-1659호</dd>
+                        </dl>
+                        <p class="copy">&copy; NEXON Korea Corporation All Rights Reserved.</p>
+                        <p class="c-txt">네이버㈜는 통신판매중개자로서 게임의 거래에 대한 의무와 책임은 각 제공자에게 있으며, 이와 관련하여 발생하는 문제에 대해서는<br>당사는 법적 책임을 부담하지 않습니다.</p>
+                        <a href="javascript:void(window.open('http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=2208717483','bizInfo','width=750, height=729, scrollbars=yes'));" class="view_more">사업자정보확인</a>
+                    </div>
+                    <div class="f_logo">
+                        <a href="http://www.nexon.com/" target="_blank" class="logo"><span class="blind">넥슨 로고</span></a>
+                        <a href="http://www.navercorp.com/ko/index.nhn" target="_blank" class="logo_naver"><span class="blind">네이버 로고</span></a>
+                        <a href="http://www.e-sports.or.kr/" target="_blank" class="kespa" title="KeSPA"><span class="blind">KeSPA</span></a>
+                    </div>
+                </div>
+			</footer>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#kart_qsear").focus(function () {
+                    $("label.faq_sp_h").removeClass("faq_sp_h").addClass("faq_none_txt");
+                });
+                $("#kart_qsear").focusout(function () {
+                    if ($("#kart_qsear").val() == "") {
+                        $("label.faq_none_txt").removeClass("faq_none_txt").addClass("faq_sp_h");
+                    }
+                });
+            });
+        </script>
+
+		</div>
+		<!-- 외부 랩의 끝 -->
+    </form>
+
+				<script type="text/javascript">
+				<!--
+					function CallBack_GameStartScriptWriter_SetWiseLog(){}
+					function GnxGameStartOnClick( argument )
+					{
+					 NGM.ChannelLaunchGame(73985, null, NgbCookie.GetCookie('NPP'), 6, 'naverWeb');
+					}
+				//-->
+				</script>
+
+    <script type="text/javascript">
+	    var rotate = ""; //interval
+	    var tmpNo = 0;
+	    $(document).ready(function () {
+
+	        $('#inp_guild_search').keypress(function (event) {
+	            if (event.keyCode == 13)
+	                return mainGuildSearch();
+	        });
+
+	        //init
+	        ui.browser.setTimeoutBanner = 0;
+	        ui.browser.setIntervalBanner = 3000;
+	        ui.browser.setTimeoutStory = 1000;
+	        ui.browser.setIntervalStory = 3000;
+	        ui.tx = (ui.browser.ua.indexOf("MSIE") != -1) ? 268 : 268;
+
+	        for (var i = 0; i < $(".banner_list button").length; i++) {
+	            $($(".banner_list button")[i]).attr("data-btnno", i + 1)
+	        }
+	        for (var i = 0; i < $(".pic").length; i++) {
+	            $($(".pic")[i]).attr("data-banner", i + 1)
+	        }
+
+	        $($(".banner_list button")[0]).addClass("selected");
+
+	        //click event bind
+	        $(".banner_list button").bind("click", function () {
+
+	            var btnMainBannerCnt = $(".banner_list button").length;
+	            for (var i = 0; i < btnMainBannerCnt; i++) {
+	                $(".banner_list button").removeClass("selected");
+	            }
+	            $(this).addClass("selected"); //ball
+
+	            var btnClickNo = $(this).attr("data-btnno"); //select ball
+	            ui.abCnt = parseInt(btnClickNo);
+	            ui.onClickfadeEffect(ui.abCnt);
+
+	        }); //main banner
+
+	        ui.startMarquee(); //marquee
+	        rotate = setInterval(ui.viewBanner, ui.browser.setIntervalBanner); //main banner
+	        ui.startWeKartStory("#story_list_wrap li"); //cart story
+
+	        $("#inp_guild_search").focus(function () {
+	            $("label.guild_sear").removeClass("guild_sear").addClass("no_guild_sear");
+	        });
+	        $("#inp_guild_search").focusout(function () {
+	            if ($("#inp_guild_search").val() == "") {
+	                $("label.no_guild_sear").removeClass("no_guild_sear").addClass("guild_sear");
+	            }
+	        });
+
+	        // 미디어 속 카트이야기
+	        (function () {
+	            var i = 0;
+	            curr = 1;
+	            $mediaWrap = $('.media_story'),
+
+                $mediaCont = $('.media_story .media-list'),
+                $mediaUl = $mediaCont.find('ul'),
+
+                $pageCurr = $mediaWrap.find('.controller .page .curr'),
+                $pageTotal = $mediaWrap.find('.controller .page .total'),
+
+                $prev = $mediaWrap.find('.controller .prev'),
+                $next = $mediaWrap.find('.controller .next');
+
+	            //init
+	            $mediaUl.eq(0).show().siblings('ul').hide();
+	            $pageCurr.text(curr);
+	            $pageTotal.text($mediaUl.length);
+                var mediaArrayImg = 'http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5341308770544781644,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4692843265186071599,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4981073705762292675,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4620732821575567792,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5053131231080744162,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5341361654477096023,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4981073735827064289,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4836958483326698660,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5125136005610868200,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5341308774839749232,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5701596749324355994,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5053078415867907053,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4981020804650109416,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5197193582468925797,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5197246363322025331,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5269251176506854510,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5413366364582709485,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4836958461851861959,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4692790428498397771,http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5053078407277972078'.split(',');
+
+	            // prev button
+	            $prev.on('click', function () {
+	                if (i == 0) {
+	                    i = 0;
+	                } else {
+	                    i--;
+	                }
+	                $mediaUl.eq(i).show().siblings('ul').hide();
+	                $pageCurr.text(i + 1);
+	            });
+
+	            //next button
+	            $next.on('click', function () {
+	                if (i < $mediaUl.length - 1) {
+	                    i++;
+	                }
+
+	                var mediaStart = i * 4;
+
+	                for (var idx = mediaStart; idx < mediaStart + 4; idx++) {
+	                    if ($.trim($('.mediaImg').eq(idx).attr('src')).length == 0) {
+	                        $('.mediaImg').eq(idx).attr('src', mediaArrayImg[idx]).show();
+	                    }
+	                }
+
+	                $mediaUl.eq(i).show().siblings('ul').hide();
+	                $pageCurr.text(i + 1);
+	            });
+	        })();
+
+	    });
+	</script>
+</body>
+</html>
