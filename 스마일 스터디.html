@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head><title>
+	스마일 스터디
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Expires" content="0" /><meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta http-equiv="imagetoolbar" content="no" /><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" /><link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" /><link rel="stylesheet" href="/css/base.css" /><link rel="stylesheet" href="/css/animate.css" /><link rel="stylesheet" href="/css/smilestudy.css" />
+
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.function.js"></script>
+	<script type="text/javascript" src="/js/ui.js"></script>
+    <script type="text/javascript" src="/js/template.js"></script>
+    <script type="text/javascript" src="/js/Loading.js"></script>
+    <!--<script type="text/javascript" src="/js/DaumPost.js"></script>//-->
+
+    <script type="text/javascript" src="/script/common.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        var pageState;
+    </script>
+
+    <script type="text/javascript">
+        var depth2;
+        var class_idx;
+
+        var strMemberName = '장현준';
+        var strAcademyName = '프리마 평거원깡 뉴스터디';
+
+
+        $(document).ready(function () {
+
+            if (pageState != "login" && pageState != "member") {
+
+                if ('장현준' == "") {
+                    alert("로그인을 하셔야 해당 페이지에 들어가실 수 있습니다.")
+                    //location.href = "/ss_member/login.aspx";
+                    location.replace("/ss_member/login.aspx");
+                }
+                else {
+                    getClassList();
+                }
+            }
+
+
+
+
+
+
+        });
+
+
+
+
+    </script>
+
+
+    <script type="text/javascript" src="/script/login.js"></script>
+
+	<script type="text/javascript">
+	    pageState = "login";
+
+	    /*
+	    2. 회원가입 : 이메일(선택) 항목인데 가입시 팝업 뜸
+	    주소(선택) - 우편번호와 팝업 선택 주소 수정 못하도록 수정
+	    회원가입 완료 후 로그인 페이지로 이동 하지 않음
+	    학원찾기 - 지역 선택 하지 않아도 검색어 입력으로 검색 할 수 있도록.
+	    검색어 입력시 검색 안됨(오류)
+	    학원 지역 설렉트 박스 체인지 이벤트 목록 변경
+	    학교찾기 - 검색어 2자 이상 입력 해야 검색 할 수 있다는 메세지
+	    */
+	</script>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+
+<div id="wrap">
+
+    <header ID="div_session" class="global">
+    <div class="container">
+    <h1><img src="/images/comm_img_logo.png" alt="NEW STUDY"></h1>
+
+        <h2>프리마 평거원깡 뉴스터디</h2>
+        <div ID="div_Y" class="move">
+        <span class="text">장현준</span> 학생 환영합니다. <button type="button" class="button" onclick='location.replace("/ss_common/login_out.aspx?retUrl=/ss_member/login.aspx")'>로그아웃</button>
+        </div>
+
+        </div>
+        </header>
+
+
+    <div>
+
+
+
+<div id="wrap">
+
+	<input type="hidden" id="AcaSearchPOP" name="AcaSearchPOP" />
+	<section class="container login">
+		<div class="region">
+            <form method="post" id="elParam" class="form">
+				<div class="float clear">
+					<div class="left">
+						<img src="/images/comm_img_logo2.png" alt="NEW STUDY">
+					</div>
+					<div class="right">
+						<div>
+                            <dl>
+							    <dt>아이디</dt>
+							    <dd><input type="text" name="login_id" id="login_id" class="inputeng"></dd>
+						    </dl>
+						</div>
+                        <div>
+                            <dl>
+							    <dt>비밀번호</dt>
+							    <dd><input type="password" name="login_pwd" id="login_pwd"></dd>
+						    </dl>
+						</div>
+                        <div class="last">
+                            <input type="submit" value="로그인" class="button" id="btnLogin" name="btnLogin" onfocus="this.blur();">
+                            <input type="hidden" value="/ss_study/main.aspx" name="retUrl" />
+						</div>
+					</div>
+                    <div class="btns">
+						<a href="member_step1.aspx">회원가입</a>
+						<a href="#pop_id" class="opener">아이디 찾기</a>
+						<a href="#pop_pw" class="opener">비밀번호 찾기</a>
+					</div>
+				</div>
+				<div class="structure">
+					<dl>
+						<dt>고객센터 : 1577-6167</dt>
+						<dd>평일 10:00 ~ 19:00</dd>
+						<dd>(점심시간) 13:00 ~ 14:00</dd>
+						<dd>공휴일, 주말은 지원하지 않습니다.</dd>
+					</dl>
+				</div>
+            </form>
+		</div>
+
+
+
+		<!-- 레이어 팝업 -->
+		<div id="pop_id" class="layer" style="display:none;"> <!-- 아이디 찾기 -->
+			<div class="area">
+				<h6>Smile Study 아이디 찾기</h6>
+				<!-- 아이디 찾기 전 -->
+				<div class="inner pop_id">
+					<table class="comm_wtable">
+						<colgroup>
+							<col style="width:80px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>소속학원</th>
+								<td>
+                                    <input type="hidden" id="aidx" name="aidx" />
+									<input type="text" style="width:260px;" id="acaname" name="acaname" readonly="true">
+									<a href="#pop_academy" class="comm_button open" style="width:70px; margin-left:7px;">학원찾기</a>
+								</td>
+							</tr>
+							<tr>
+								<th>이름</th>
+								<td><input type="text" id="name" name="name" style="width:260px;" class="inputko"></td>
+							</tr>
+							<tr>
+								<th>H.P</th>
+								<td>
+                                <select id="tel1" name="tel1" style="width:90px;">
+                                    <option value="010" selected >010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+
+                                - <input type="text" id="tel2" name="tel2" style="width:100px;" maxlength="4">
+                                - <input type="text" id="tel3" name="tel3" style="width:100px;" maxlength="4"></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btn">
+						<button id="userIdSearch" type="button" class="comm_button w140">찾기</button>
+					</div>
+				</div>
+				<!-- //아이디 찾기 전 -->
+				<!-- 아이디 찾은 후 -->
+				<div class="inner pop_id">
+					<div class="structure">
+						<span>아이디</span> <input type="text" id="txtIdSearch" name="txtIdSearch" style="width:260px;" readonly="true">
+					</div>
+					<div class="btn">
+                        <button type="button" id="btnIdSearch" name="btnIdSearch" class="comm_button gray" style="width:80px;">닫기</button>
+					</div>
+				</div>
+				<!-- //아이디 찾은 후 -->
+<!-- 				<a href="#" class="close" title="팝업 창 닫기"><i class="split">팝업 창 닫기</i></a>  -->
+			</div>
+		</div>
+
+
+		<div id="pop_pw" class="layer" style="display:none;"> <!-- 비밀번호 찾기 -->
+			<div class="area">
+				<h6>Smile Study 비밀번호 찾기</h6>
+				<div class="inner pop_search">
+					<table class="comm_wtable">
+						<colgroup>
+							<col style="width:80px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>소속학원</th>
+								<td>
+									<input type="text" style="width:260px;" id="acanamepw" name="acanamepw" readonly="true">
+									<a href="#pop_academy" class="comm_button open" style="width:70px; margin-left:7px;">학원찾기</a>
+								</td>
+							</tr>
+							<tr>
+								<th>이름</th>
+								<td><input type="text" style="width:260px;" class="inputko" id="namepw" name="namepw"></td>
+							</tr>
+							<tr>
+								<th>ID</th>
+								<td><input type="text" style="width:260px;" class="inputeng" id="use_id" name="use_id"></td>
+							</tr>
+							<tr>
+								<th>H.P</th>
+								<td>
+                                <select id="hp1" name="hp1" style="width:90px;">
+                                    <option value="010" selected >010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                                - <input type="text" id="hp2" name="hp2" style="width:100px;" maxlength="4">
+                                - <input type="text" id="hp3" name="hp3" style="width:100px;" maxlength="4"></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btn">
+<!--					<button type="button" class="comm_button w140" onclick="location.href='pw_change.aspx'">확인</button>  -->
+                        <button type="button" id="userPwdSearch" class="comm_button w140" >확인</button>
+                        <button type="button" id="btnPwdSearch" name="btnPwdSearch" class="comm_button gray" style="width:140px;">닫기</button>
+					</div>
+				</div>
+<!--				<a href="#" class="close" title="팝업 창 닫기"><i class="split">팝업 창 닫기</i></a>  -->
+			</div>
+		</div>
+		<!-- //레이어 팝업 -->
+	</section>
+
+</div>
+
+<script type="text/javascript">
+    var user_id = sessionStorage.getItem("user_id");
+    var Admin = sessionStorage.getItem("Admin");
+    if (user_id != undefined && user_id != "" && Admin == "Y") {
+        $("#login_id").val(user_id);
+        $("#login_pwd").val("smilenewstudy");
+
+        delete sessionStorage["user_id"];
+        sessionStorage.removeItem("user_id");
+
+        //delete sessionStorage["Admin"];
+        //sessionStorage.removeItem("Admin");
+
+    }
+</script>
+
+
+
+    </div>
+
+
+    <!-- 학원 찾기 레이어 팝업 -->
+		<div id="pop_academy" class="layer" style="display:none; z-index:101;">
+			<div class="area">
+				<h6>학 원 찾 기</h6>
+				<div class="inner pop_search">
+					<div class="search">
+
+						<select id="SelCity" name="SelCity" style="width:80px" >
+						</select>
+						<select id="SelArea" name="SelArea" style="width:100px">
+						</select>
+
+                    	<input id="txtAcamSearch" name="txtAcamSearch" type="text" style="width:170px;" class="inputko">
+						<button id="acaSearch" type="button" class="comm_button" style="width:60px;">찾기</button>
+					</div>
+					<div class="structure">
+						<table class="table_thead">
+							<colgroup>
+								<col>
+								<col style="width:100px;">
+								<col style="width:200px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>학원명</th>
+									<th>연락처</th>
+									<th>주소</th>
+								</tr>
+							</thead>
+						</table>
+						<div class="overflow">
+							<table class="table_body">
+								<colgroup>
+									<col>
+									<col style="width:100px;">
+									<col style="width:200px;">
+								</colgroup>
+								<tbody id="db_list"></tbody>
+							</table>
+						</div>
+					</div>
+					<div class="btn">
+						<button type="button" class="close comm_button gray" style="width:80px;">닫기</button>
+					</div>
+				</div>
+				<a href="#" class="close" title="팝업 창 닫기"><i class="split">팝업 창 닫기</i></a>
+			</div>
+		</div>
+
+    <!-- 학원 찾기 레이어 팝업 -->
+
+
+	<footer>
+        <p class="text">고객센터 / 문의  <b>1577-6167</b> (평일 AM 10 - PM 7)</p>
+            <div class="btns">
+                <a href="http://t-ime.com" target="_blank" title="새창 이동"><img src="/images/comm_img_logo3.png" alt="타임교육"></a>
+                <a href="http://www.newstudy.net" class="last" target="_blank" title="새창 이동"><img src="/images/comm_img_logo4.png" alt="뉴스터디학원"></a>
+            </div>
+        <p class="text_v2">Copyright © 2017 (주)타임교육. All Rights Reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
