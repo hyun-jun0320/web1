@@ -1,0 +1,17 @@
+#include <stdio.h> //라이프니츠의 공식
+
+int main()
+{
+    double pi=0,temp=1,p=-1,num=1;
+    int k, s;
+    while(num<1000000000)
+    {
+        p*=-1;
+        pi+=p*1.0/temp;
+        temp+=2;
+        num++;
+        for(k=1, s=10; temp<s; k++, s*=10);
+        printf("%.*lf\r", k, 4*pi);
+    }
+
+}
