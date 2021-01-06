@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>진주교육지원청</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+ 		<link rel="stylesheet" href="/css/ap/popStyle.css">
+        <link href="/css/co/na/ntt.css" rel="stylesheet">
+        <link href="/css/com/jquery/jquery-ui.min.css" rel="stylesheet" />
+        <link href="/css/com/jquery/select2.css" rel="stylesheet" />
+        <script type="text/javascript" src="/js/gne/html5shiv.js"></script>
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+		<script src="/js/select2.js"></script>
+        <script type="text/javascript" src="/js/jquery.form.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="/js/jquery.bpopup.min.js"></script>
+		<script type="text/javascript" src="/js/sub.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+	</head>
+    <body>
+        <div id="popupWrap">
+			<!-- //서브콘텐츠 -->
+<Style>
+h1, h2, h3, h4, h5 {font-weight:normal;font-family:'NanumBold';}
+body{font-family:'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif}
+body, input, textarea, select, button, table, h1, h2, h3, h4, h5{font-size:16px; line-height:1.25em /* 20px */}
+#popupWrap { position:relative; min-height:100%; padding:0; background:#fff; border-left:1px solid #dad9d9; border-right:1px solid #dad9d9}
+#popupWrap .popHeader { position:relative; width:100%; padding:7px 1px 0; height:49px; margin:0 -1px; background:#ebebeb url("/images/ad/lms/la/pop/pop_header_bg.jpg") no-repeat 0 7px ; }
+#popupWrap .popHeader .title { padding:0 0 0 18px; font-size:19px; line-height:49px; font-family:'NotoM'; text-align: center;}
+#popupWrap .popHeader .right { position:absolute; top:7px; right:0; width:80px; height:49px; overflow:hidden; white-space:nowrap; text-indent:-999px; background:url("/images/ad/lms/la/pop/pop_header_bg.jpg") 100% 0 no-repeat; }
+#popupWrap .popHeader .Close { position:absolute; right:8px; top:13px; width:36px; height:36px; overflow:hidden; white-space:nowrap; text-indent:-9999px; font-size:0; background:url("/images/ad/lms/la/pop/btn_close.gif") 0 0 no-repeat; }
+#popupWrap .popCenter { position:relative; width:100%; height:49px; background:#2370A9;}
+#popupWrap .popCenter .title { padding:0 0 0 18px; font-size:19px; line-height:49px; font-family:'NotoM'; text-align: center; color: #fff;}
+#popupWrap .popContainer { position:relative; z-index:2; padding:20px 18px 20px; *zoom:1; }
+#popupWrap .popContainer div:first-child { margin-top:0; }
+
+.BD_list th{background: none;}
+.bullTy {position:relative; font-size:14px; line-height:140%; margin:6px 0; color:#444; padding-left:22px; background:url('/images/com/gne/tit_2.png') no-repeat 0 4px}
+
+/* 컬러 */
+.col_red{color:#ec1818;}
+.col_org{color:#f26522;}
+.col_gr {color:#058e42;}
+.col_ygr{color:#8db427;}
+.col_bl {color:#005fca;}
+.col_bk {color:#000;}
+.col_wt {color:#fff;}
+
+</Style>
+<form id="introPopupForm" name="introPopupForm">
+	<input type="hidden" name="sysId" value="jjedu"/>
+	<input type="hidden" name="introTy" value="ASIGN"/>
+
+
+	<input type="hidden" name="clasYn" value="Y"/>
+	<input type="hidden" name="noYn" value="Y"/>
+
+	<div class="popHeader">
+	    <h1 class="title">2021학년도 중학교  추첨 배정 결과 발표 조회</h1>
+	</div>
+
+	<div class="popContainer">
+	<table class="BD_table" border="1" style="table-layout:auto;">
+		<caption>제목, 이미지, 이미지설명, 내용을 작성하실 수 있습니다.</caption>
+		<colgroup>
+			<col style="width: 45%;">
+			<col style="width: 55%;">
+		</colgroup>
+		<tbody>
+
+
+				<tr>
+					<th scope="row" class="ac">출신학교(예시:OO초등학교)</th>
+					<td class="ac">
+						<input type="text" name="psitnSchul" id="psitnSchul" value=""/>
+					</td>
+				</tr>
+
+					<tr>
+						<th scope="row" class="ac">반(숫자만 입력, 예시:1)</th>
+						<td class="ac">
+							<input type="text" name="clas" id="clas" value=""/>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="ac">번호(숫자만 입력, 예시:1)</th>
+						<td class="ac">
+							<input type="text" name="no" id="no" value=""/>
+						</td>
+					</tr>
+
+
+				<tr>
+
+
+						<th scope="row" class="ac">성명(공백없이 입력)</th>
+
+					<td class="ac">
+						<input type="text" name="nm" id="nm" value=""/>
+					</td>
+				</tr>
+				<tr>
+
+
+
+						<th scope="row" class="ac">생년월일(숫자만 입력, 예시 :20080101)</th>
+
+					<td class="ac">
+						<input type="text" name="brthdy" id="brthdy" value=""/>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+
+
+	</div>
+	<div id="introPopupList" style="display:none;table-layout:fixed;">
+		<div class="popCenter">
+			<h1 class="title">2021학년도 중학교  추첨 배정 결과 발표 결과</h1>
+		</div>
+		<div class="popContainer">
+			<table class="BD_list" border="1" style="border: 2px solid #0b4d93;">
+				<thead>
+					<tr>
+
+
+							<th class="ac">출신학교</th>
+							<th class="ac">반</th>
+							<th class="ac">번호</th>
+							<th class="ac">이름</th>
+							<th class="ac">생년월일</th>
+							<th class="ac">배정학교</th>
+
+
+
+
+
+					</tr>
+				</thead>
+				<tbody id="introPopupAppender" style="font-weight : bold;">
+				</tbody>
+			</table>
+
+
+
+		</div>
+	</div>
+</form>
+
+<div class="ac mgt10">
+	<button class="btn btn_blue" type="button" onclick="javascript:searchIntro();">조회</button>
+	<button class="btn btn_dark" type="button" onclick="javascript:window.close();">닫기</button>
+</div>
+
+<script type="text/javascript">
+function searchIntro() {
+
+
+		if ($("#psitnSchul").valueEmpty()) {
+	        alert("출신학교를 입력해주세요.");
+	        $("#psitnSchul").focus();
+	        return false;
+	   	}
+
+
+			if ($("#clas").valueEmpty()) {
+		        alert("반을 입력해주세요.");
+		        $("#clas").focus();
+		        return false;
+		   	}
+
+			if ($("#no").valueEmpty()) {
+		        alert("번호를 입력해주세요.");
+		        $("#no").focus();
+		        return false;
+		   	}
+
+
+
+
+
+
+		if ($("#nm").valueEmpty()) {
+		       alert("성명을 입력해주세요.");
+		       $("#nm").focus();
+		       return false;
+		  }
+		if ($("#brthdy").valueEmpty()) {
+		       alert("생년월일을 입력해주세요.");
+		       $("#brthdy").focus();
+		       return false;
+		  }
+
+
+	$("#nm").val($("#nm").val().trim());
+	$("#brthdy").val($("#brthdy").val().trim());
+
+	$.ajax({
+		type : 'post',
+		url : "/jjedu/in/intro/selectIntroInfo.do",
+		async : false,
+		dataType : "json",
+		data : $('#introPopupForm').serialize(),
+		success : function(data) {
+			var introList = data.introList;
+			var obj = "";
+			if(introList.length == 0) {
+
+
+					obj += "<tr><td class='ac' colspan='6'>검색 결과가 없습니다.</td></tr>";
+
+
+
+			} else {
+				for(i=0; i<introList.length; i++) {
+					var j = introList[i];
+					/* 생년월일(yyyyMMdd) */
+					var brthdy = j.brthdy;
+					if(brthdy == undefined) {
+						brthdy = "-";
+					} else {
+						// yyyy년MM월dd일
+						year = brthdy.substring(0,4);
+						month = brthdy.substring(4,6);
+						day = brthdy.substring(6,8);
+						brthdy = year + "년" + month + "월" + day + "일";
+					}
+
+						obj += "<tr>";
+
+
+						obj += "<td class='ac'>" + (j.psitnSchul == undefined ? '-' : j.psitnSchul) + "</td>";
+						obj += "<td class='ac'>" + (j.clas == undefined ? '-' : j.clas) + "</td>";
+						obj += "<td class='ac'>" + (j.no == undefined ? '-' : j.no) + "</td>";
+						obj += "<td class='ac'>" + (j.nm == undefined ? '-' : j.nm) + "</td>";
+						obj += "<td class='ac'>" + brthdy + "</td>";
+						obj += "<td class='ac'>" + (j.asignSchul == undefined ? '-' : j.asignSchul) + "</td>";
+
+
+
+
+
+						obj += "</tr>";
+				}
+			}
+			$('#introPopupAppender').empty();
+			$('#introPopupAppender').append(obj);
+			$('#introPopupList').show();
+		},
+		error : function(result) {
+			alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+		}
+	});
+};
+</script>
+			<!-- //서브콘텐츠 -->
+    	</div>
+    </body>
+</html>
